@@ -1,0 +1,42 @@
+<!--pages/my/my.wxml-->
+<view>
+    <button>点击有彩蛋</button>
+</view>
+<view>
+    <block  class="b_icon" wx:for="{{iconType}}" >
+        <icon type="{{item}}"></icon>
+    </block >
+</view>
+
+<view class="btn-area">
+  <view class="body-view">
+    <text>{{text}}</text>
+    <button bindtap="add">add line</button>
+    <button bindtap="remove">remove line</button>
+  </view>
+</view>
+<progress percent="50"/>
+<text>123</text>
+<progress  percent="50" show-info="true"/>
+<text>123</text>
+<progress  percent="60" show-info="true" stroke-width="20" />
+<text>123</text>
+<progress  percent="15" show-info="true" stroke-width="20" color="pink" />
+<text>123</text>
+<progress  percent="30" show-info="true" stroke-width="20" color="pink" activeColor="#09BB07"/>
+<text>123</text>
+<progress  percent="90" show-info="true" stroke-width="20" color="pink" activeColor="#09BB07" backgroundColor="blue"/>
+<text>123</text>
+<progress  percent="70" show-info="true" stroke-width="20" color="pink" activeColor="yellow" backgroundColor="blue" active="true"/>
+<!--页面弹层 start-->
+<view >
+    <loading wx:if="{{showLoading}}">加载中</loading>
+</view>
+<!--页面弹层 end-->
+<!--弹出层 start-->
+<modal hidden="{{hidden}}" title="是否删除" confirm-text="确定" cancel-text="返回" bindcancel="cancel" bindconfirm="confirm" no-cancel="{{nocancel}}">
+    一经删除，无法找回!  ...慎点
+</modal>
+<!--弹出层 end-->
+<button bindtap="handleClick" wx:if="{{showBtn}}">删除</button>
+<button>低等级低</button>

@@ -1,0 +1,20 @@
+/* pages/my/my.wxss */
+button {
+    width: 240rpx;
+    height: 100rpx;
+    margin: 20rpx auto ;
+    padding:0 10rpx;
+    background: greenyellow;
+    color:white;
+    font-weight: 900;
+}
+icon {
+    width: 100rpx;
+    height: 100rpx;
+    text-align: center;
+    /*font-size: 50rpx;*/
+    padding-top: 30rpx;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    
+    }

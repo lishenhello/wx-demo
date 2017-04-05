@@ -1,0 +1,20 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+page {
+  height: 100%;
+}
+.scrollView {
+  height: 100%;
+}
+/*可实现页面的无滚动条滚动*/
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
